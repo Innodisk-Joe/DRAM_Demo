@@ -9,7 +9,6 @@ import DRAM
 import classification
 from multiprocessing.pool import ThreadPool
 
-
 EXTENSIONS=['.jpg','.JPG','.jpeg','.JPEG','.png','.PNG','.bmp','.BMP']
 args=argmanager.get_args()
 
@@ -28,7 +27,7 @@ AImodel_manager={}
 tmp=[]
 if os.path.isfile(os.path.join(os.getcwd(),f'config.ini')):
     def creat_model(manager,p_type,direction,m_path,ivit):
-        manager[f'{p_type}'][f'{direction}']['model'].append(classification.DRAM_plugin(m_path,ivit))
+        manager[f'{p_type}'][f'{direction}']['model'].append(classification.model.DRAM_plugin(m_path,ivit))
     class_type=None
     for key,path in utils.Initialization_config(os.path.join(os.getcwd(),f'config.ini'),f'AI_model'): 
         class_type=key.split('_')[0]
