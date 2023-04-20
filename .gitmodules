@@ -1,0 +1,9 @@
+[submodule "DRAM"]
+	path = DRAM
+	url = https://github.com/Innodisk-Joe/DRAM.git
+[submodule "classification"]
+	path = classification
+	url = https://github.com/Innodisk-Joe/classification.git
+[submodule "objectdetection"]
+	path = objectdetection
+	url = https://github.com/Innodisk-Joe/objectdetection.git
