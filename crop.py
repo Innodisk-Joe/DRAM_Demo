@@ -6,7 +6,7 @@ import numpy as np
 import utils
 import argmanager
 import DRAM
-from classification.model import DRAM_plugin
+
 
 EXTENSIONS=['.jpg','.JPG','.jpeg','.JPEG','.png','.PNG','.bmp','.BMP']
 args=argmanager.get_args()
